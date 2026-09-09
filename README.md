@@ -390,9 +390,9 @@ I don't just build when everything works. I debug when it doesn't.
 
 <div align="center">
 
-<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=m-Affan55&show_icons=true&theme=github_dark&bg_color=0d1117&title_color=e8a838&icon_color=e8a838&text_color=e6edf3&border_color=30363d&hide_border=false&count_private=true" alt="Affan's GitHub Stats" height="170"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=m-Affan55&theme=github_dark" alt="Affan's GitHub Stats" height="170"/>
 &nbsp;&nbsp;
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=m-Affan55&layout=compact&theme=github_dark&bg_color=0d1117&title_color=e8a838&text_color=e6edf3&border_color=30363d&hide_border=false&langs_count=8" alt="Top Languages" height="170"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=m-Affan55&theme=github_dark" alt="Top Languages by Commits" height="170"/>
 
 <br/><br/>
 
