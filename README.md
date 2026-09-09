@@ -137,7 +137,7 @@ AI-powered meal tracking app that combines barcode scanning with intelligent foo
 </td>
 <td width="50%" valign="top">
 
-#### 📝 [Post-Manager](https://github.com/m-Affan55/Post-Manager)
+#### ⚡ [Post-Manager](https://github.com/m-Affan55/Post-Manager)
 
 *Building and optimizing a production-style REST backend.*
 
@@ -155,7 +155,7 @@ Complete social-style backend with authentication, CRUD operations, and real per
 <tr>
 <td width="50%" valign="top">
 
-#### 🎬 [MovieRecommendationSystem](https://github.com/m-Affan55/MovieRecommendationSystem)
+#### 🍿 [MovieRecommendationSystem](https://github.com/m-Affan55/MovieRecommendationSystem)
 
 *Recommendations based on what you actually like.*
 
@@ -391,9 +391,9 @@ I don't just build when everything works. I debug when it doesn't.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=m-Affan55&show_icons=true&theme=github_dark&bg_color=0d1117&title_color=e8a838&icon_color=e8a838&text_color=e6edf3&border_color=30363d&hide_border=false&count_private=true" alt="Affan's GitHub Stats" height="170"/>
+<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=m-Affan55&show_icons=true&theme=github_dark&bg_color=0d1117&title_color=e8a838&icon_color=e8a838&text_color=e6edf3&border_color=30363d&hide_border=false&count_private=true" alt="Affan's GitHub Stats" height="170"/>
 &nbsp;&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=m-Affan55&layout=compact&theme=github_dark&bg_color=0d1117&title_color=e8a838&text_color=e6edf3&border_color=30363d&hide_border=false&langs_count=8" alt="Top Languages" height="170"/>
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=m-Affan55&layout=compact&theme=github_dark&bg_color=0d1117&title_color=e8a838&text_color=e6edf3&border_color=30363d&hide_border=false&langs_count=8" alt="Top Languages" height="170"/>
 
 <br/><br/>
 
