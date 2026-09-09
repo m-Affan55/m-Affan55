@@ -171,18 +171,18 @@ A recommendation engine using graph databases to find meaningful connections bet
 </td>
 <td width="50%" valign="top">
 
-#### 🎮 [Friends-Title-Game](https://github.com/m-Affan55/Friends-Title-Game)
+#### 📢 [NeoNotice](https://github.com/Muhammad-Umair-Tech/NeoNotice)
 
-*A social game that works online and offline.*
+*Department notices pushed to physical displays — automatically.*
 
-Multiplayer title-giving game built with Flutter, handling real-time communication, state management, and the challenge of online/offline sync.
+Full-stack notice management system built with React + Django. Notices posted through a web dashboard are pushed in real-time to LED displays via ESP32 microcontrollers over a local network.
 
-**Stack:** `Flutter` `Dart` `Riverpod` `WebSockets`
+**Stack:** `React` `Django` `ESP32` `Arduino` `REST API` `IoT`
 
 **Engineering highlight:**
-> Designed state management architecture handling real-time multiplayer sessions with graceful offline fallback and reconnection logic.
+> Bridged software and hardware — Django REST backend receives notice submissions, formats payloads, and transmits to ESP32 over serial/network, driving physical LED panels without manual intervention.
 
-`MOBILE` `REALTIME` `STATE MANAGEMENT`
+`IOT` `FULLSTACK` `HARDWARE INTEGRATION` `REALTIME`
 
 </td>
 </tr>
@@ -197,8 +197,7 @@ Multiplayer title-giving game built with Flutter, handling real-time communicati
 | [Food_Management](https://github.com/m-Affan55/Food_Management) | `C#` `Windows Forms` `MySQL` | Desktop food management system |
 | [BankManagementSystem](https://github.com/m-Affan55/BankManagementSystem) | `C++` | Console-based banking application with OOP |
 | [HostelManagementSystem](https://github.com/m-Affan55/HostelManagementSystem) | `C++` | Hostel management with file handling |
-| [NeoNotice](https://github.com/m-Affan55/NeoNotice) | `JavaScript` | Collaborative notification project |
-| [my-portfolio](https://github.com/m-Affan55/my-portfolio) | `JavaScript` | Personal portfolio website |
+| [LARA](https://github.com/Muhammad-Umair-Tech/lara) | `Python` `Django` `ESP32` | SIEM app — detects transaction overflow, account takeover & suspicious activity for banking systems |
 
 </details>
 
