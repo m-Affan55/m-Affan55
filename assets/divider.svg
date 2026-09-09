@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="12" viewBox="0 0 900 12">
+  <defs>
+    <linearGradient id="divGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e8a838" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#e8a838" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#e8a838" stop-opacity="0.6"/>
+      <stop offset="85%" stop-color="#e8a838" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#e8a838" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="5" width="900" height="1" fill="url(#divGrad)"/>
+  <!-- Small center diamond -->
+  <g transform="translate(450, 5.5)">
+    <rect x="-4" y="-4" width="8" height="8" fill="#e8a838" opacity="0.5" transform="rotate(45)"/>
+  </g>
+</svg>

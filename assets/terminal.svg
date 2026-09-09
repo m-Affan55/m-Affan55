@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1e26"/>
+      <stop offset="100%" stop-color="#12161e"/>
+    </linearGradient>
+    <linearGradient id="titleBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#252a33"/>
+      <stop offset="100%" stop-color="#1e232b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Terminal window -->
+  <rect x="50" y="10" width="800" height="300" fill="url(#termBg)" rx="10" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Title bar -->
+  <rect x="50" y="10" width="800" height="36" fill="url(#titleBar)" rx="10"/>
+  <rect x="50" y="36" width="800" height="10" fill="url(#titleBar)"/>
+
+  <!-- Window dots -->
+  <circle cx="76" cy="28" r="6" fill="#f85149" opacity="0.9"/>
+  <circle cx="96" cy="28" r="6" fill="#e8a838" opacity="0.9"/>
+  <circle cx="116" cy="28" r="6" fill="#3fb950" opacity="0.9"/>
+
+  <!-- Title text -->
+  <text x="450" y="33" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#7d8590">affan@dev: ~/projects</text>
+
+  <!-- Terminal content - each line fades in with staggered delay -->
+
+  <!-- Line 1: prompt + command -->
+  <g opacity="0">
+    <text x="80" y="75" font-family="'Courier New', monospace" font-size="13">
+      <tspan fill="#3fb950">affan</tspan><tspan fill="#7d8590">@</tspan><tspan fill="#58a6ff">dev</tspan><tspan fill="#7d8590"> ~ $ </tspan><tspan fill="#e6edf3">cd ~/projects/nutrisense</tspan>
+    </text>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.5s" fill="freeze"/>
+  </g>
+
+  <!-- Line 2: prompt + docker command -->
+  <g opacity="0">
+    <text x="80" y="100" font-family="'Courier New', monospace" font-size="13">
+      <tspan fill="#3fb950">affan</tspan><tspan fill="#7d8590">@</tspan><tspan fill="#58a6ff">dev</tspan><tspan fill="#7d8590"> ~ $ </tspan><tspan fill="#e6edf3">docker compose up --build</tspan>
+    </text>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.2s" fill="freeze"/>
+  </g>
+
+  <!-- Line 3: Backend API -->
+  <g opacity="0">
+    <text x="80" y="128" font-family="'Courier New', monospace" font-size="13">
+      <tspan fill="#3fb950">  [ok] </tspan><tspan fill="#7d8590">FastAPI backend running on </tspan><tspan fill="#e8a838">:8000</tspan>
+    </text>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.0s" fill="freeze"/>
+  </g>
+
+  <!-- Line 4: PostgreSQL -->
+  <g opacity="0">
+    <text x="80" y="153" font-family="'Courier New', monospace" font-size="13">
+      <tspan fill="#3fb950">  [ok] </tspan><tspan fill="#7d8590">PostgreSQL connected on </tspan><tspan fill="#e8a838">:5432</tspan>
+    </text>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.6s" fill="freeze"/>
+  </g>
+
+  <!-- Line 5: Redis -->
+  <g opacity="0">
+    <text x="80" y="178" font-family="'Courier New', monospace" font-size="13">
+      <tspan fill="#3fb950">  [ok] </tspan><tspan fill="#7d8590">Redis cache initialized on </tspan><tspan fill="#e8a838">:6379</tspan>
+    </text>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.2s" fill="freeze"/>
+  </g>
+
+  <!-- Line 6: flutter command -->
+  <g opacity="0">
+    <text x="80" y="210" font-family="'Courier New', monospace" font-size="13">
+      <tspan fill="#3fb950">affan</tspan><tspan fill="#7d8590">@</tspan><tspan fill="#58a6ff">dev</tspan><tspan fill="#7d8590"> ~ $ </tspan><tspan fill="#e6edf3">flutter run --release</tspan>
+    </text>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.0s" fill="freeze"/>
+  </g>
+
+  <!-- Line 7: Build success -->
+  <g opacity="0">
+    <text x="80" y="238" font-family="'Courier New', monospace" font-size="13">
+      <tspan fill="#3fb950">  [ok] </tspan><tspan fill="#7d8590">Build successful. </tspan><tspan fill="#e8a838">NutriSense v1.0</tspan><tspan fill="#7d8590"> deployed.</tspan>
+    </text>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="5.0s" fill="freeze"/>
+  </g>
+
+  <!-- Line 8: k6 load test -->
+  <g opacity="0">
+    <text x="80" y="263" font-family="'Courier New', monospace" font-size="13">
+      <tspan fill="#3fb950">affan</tspan><tspan fill="#7d8590">@</tspan><tspan fill="#58a6ff">dev</tspan><tspan fill="#7d8590"> ~ $ </tspan><tspan fill="#e6edf3">k6 run load-test.js</tspan>
+    </text>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="5.8s" fill="freeze"/>
+  </g>
+
+  <!-- Line 9: Performance result -->
+  <g opacity="0">
+    <text x="80" y="288" font-family="'Courier New', monospace" font-size="13">
+      <tspan fill="#3fb950">  [ok] </tspan><tspan fill="#7d8590">avg response: </tspan><tspan fill="#3fb950">42ms</tspan><tspan fill="#7d8590"> | p95: </tspan><tspan fill="#e8a838">89ms</tspan><tspan fill="#7d8590"> | requests: </tspan><tspan fill="#58a6ff">10,000</tspan>
+    </text>
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="6.5s" fill="freeze"/>
+  </g>
+
+  <!-- Blinking cursor at end -->
+  <rect x="80" y="296" width="8" height="14" fill="#e8a838" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0;1;1" keyTimes="0;0.49;0.5;0.74;0.75;0.99;1;1" dur="1.2s" begin="7s" repeatCount="indefinite"/>
+  </rect>
+</svg>

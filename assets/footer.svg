@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="120" viewBox="0 0 900 120">
+  <defs>
+    <linearGradient id="ftBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#111820"/>
+    </linearGradient>
+    <linearGradient id="ftLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e8a838" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#e8a838" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#e8a838" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="120" fill="url(#ftBg)" rx="8"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="900" height="1" fill="url(#ftLine)"/>
+
+  <!-- Message -->
+  <text x="450" y="45" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" fill="#e6edf3" letter-spacing="1">
+    Interested in building something useful?
+  </text>
+
+  <!-- Subtitle -->
+  <text x="450" y="70" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#7d8590">
+    Let's connect and create something that works.
+  </text>
+
+  <!-- Blinking prompt -->
+  <text x="450" y="100" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" fill="#e8a838">
+    <tspan>&gt; _</tspan>
+    <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/>
+  </text>
+</svg>
