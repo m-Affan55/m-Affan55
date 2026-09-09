@@ -1,80 +1,131 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
   <defs>
-    <!-- Amber glow gradient -->
     <linearGradient id="amberGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#e8a838" stop-opacity="0"/>
-      <stop offset="25%" stop-color="#e8a838" stop-opacity="0.9"/>
-      <stop offset="75%" stop-color="#e8a838" stop-opacity="0.9"/>
+      <stop offset="0%"   stop-color="#e8a838" stop-opacity="0"/>
+      <stop offset="25%"  stop-color="#e8a838" stop-opacity="0.9"/>
+      <stop offset="75%"  stop-color="#e8a838" stop-opacity="0.9"/>
       <stop offset="100%" stop-color="#e8a838" stop-opacity="0"/>
     </linearGradient>
-    <!-- Background gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="50%" stop-color="#121720"/>
+      <stop offset="0%"   stop-color="#0d1117"/>
+      <stop offset="50%"  stop-color="#121720"/>
       <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="scanLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#e8a838" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#e8a838" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#e8a838" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
   <!-- Background -->
   <rect width="900" height="260" fill="url(#bgGrad)" rx="8" stroke="#30363d" stroke-width="1"/>
 
-  <!-- Subtle tech grid lines -->
-  <line x1="0" y1="65" x2="900" y2="65" stroke="#21262d" stroke-width="0.75" stroke-dasharray="4 8" opacity="0.6"/>
-  <line x1="0" y1="130" x2="900" y2="130" stroke="#21262d" stroke-width="0.75" stroke-dasharray="4 8" opacity="0.6"/>
-  <line x1="0" y1="195" x2="900" y2="195" stroke="#21262d" stroke-width="0.75" stroke-dasharray="4 8" opacity="0.6"/>
-  <line x1="225" y1="0" x2="225" y2="260" stroke="#21262d" stroke-width="0.75" stroke-dasharray="4 8" opacity="0.6"/>
-  <line x1="450" y1="0" x2="450" y2="260" stroke="#21262d" stroke-width="0.75" stroke-dasharray="4 8" opacity="0.6"/>
-  <line x1="675" y1="0" x2="675" y2="260" stroke="#21262d" stroke-width="0.75" stroke-dasharray="4 8" opacity="0.6"/>
+  <!-- Subtle tech grid lines (static) -->
+  <line x1="0"   y1="65"  x2="900" y2="65"  stroke="#21262d" stroke-width="0.75" stroke-dasharray="4 8" opacity="0.6"/>
+  <line x1="0"   y1="130" x2="900" y2="130" stroke="#21262d" stroke-width="0.75" stroke-dasharray="4 8" opacity="0.6"/>
+  <line x1="0"   y1="195" x2="900" y2="195" stroke="#21262d" stroke-width="0.75" stroke-dasharray="4 8" opacity="0.6"/>
+  <line x1="225" y1="0"   x2="225" y2="260" stroke="#21262d" stroke-width="0.75" stroke-dasharray="4 8" opacity="0.6"/>
+  <line x1="450" y1="0"   x2="450" y2="260" stroke="#21262d" stroke-width="0.75" stroke-dasharray="4 8" opacity="0.6"/>
+  <line x1="675" y1="0"   x2="675" y2="260" stroke="#21262d" stroke-width="0.75" stroke-dasharray="4 8" opacity="0.6"/>
+
+  <!-- Animated scan line sweeping top-to-bottom -->
+  <rect x="0" y="-8" width="900" height="8" fill="url(#scanLine)">
+    <animate attributeName="y" values="-8;260;-8" dur="4s" repeatCount="indefinite" calcMode="linear"/>
+  </rect>
 
   <!-- Top accent bar -->
   <rect x="0" y="0" width="900" height="3" fill="url(#amberGlow)"/>
 
-  <!-- Decorative Brackets -->
-  <text x="35" y="145" font-family="'Courier New', monospace" font-size="100" fill="#e8a838" opacity="0.12" font-weight="300">{</text>
-  <text x="835" y="145" font-family="'Courier New', monospace" font-size="100" fill="#e8a838" opacity="0.12" font-weight="300">}</text>
+  <!-- Decorative Brackets — fade in slowly -->
+  <text x="35" y="145" font-family="'Courier New', monospace" font-size="100" fill="#e8a838" font-weight="300" opacity="0">
+    {
+    <animate attributeName="opacity" values="0;0.12" dur="0.8s" begin="0.2s" fill="freeze" repeatCount="1"/>
+  </text>
+  <text x="835" y="145" font-family="'Courier New', monospace" font-size="100" fill="#e8a838" font-weight="300" opacity="0">
+    }
+    <animate attributeName="opacity" values="0;0.12" dur="0.8s" begin="0.3s" fill="freeze" repeatCount="1"/>
+  </text>
 
-  <!-- Line numbers (code editor gutter) -->
-  <g opacity="0.2" font-family="'Courier New', monospace" font-size="11" fill="#7d8590">
+  <!-- Line numbers (code editor gutter) — fade in -->
+  <g font-family="'Courier New', monospace" font-size="11" fill="#7d8590" opacity="0">
     <text x="70" y="70">01</text>
     <text x="70" y="100">02</text>
     <text x="70" y="130">03</text>
     <text x="70" y="160">04</text>
     <text x="70" y="190">05</text>
+    <animate attributeName="opacity" values="0;0.2" dur="0.6s" begin="0.4s" fill="freeze" repeatCount="1"/>
   </g>
   <line x1="95" y1="45" x2="95" y2="215" stroke="#30363d" stroke-width="1" opacity="0.5"/>
 
-  <!-- Main Name -->
-  <text x="450" y="98" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="#e6edf3" letter-spacing="4">AFFAN ASIM</text>
-
-  <!-- Subtitle -->
-  <text x="450" y="132" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" fill="#7d8590" letter-spacing="2">CS STUDENT  ·  SOFTWARE DEVELOPER  ·  BUILDER</text>
-
-  <!-- Amber divider line -->
-  <rect x="310" y="146" width="280" height="1" fill="url(#amberGlow)" opacity="0.8"/>
-
-  <!-- Tagline -->
-  <text x="450" y="176" text-anchor="middle" font-family="'Courier New', monospace" font-size="15" font-weight="600" fill="#e8a838" letter-spacing="1">
-    &gt; learn. build. debug. deploy. repeat. _
+  <!-- Main Name — fade in -->
+  <text x="450" y="98" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="44" font-weight="800" fill="#e6edf3" letter-spacing="4" opacity="0">
+    AFFAN ASIM
+    <animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.1s" fill="freeze" repeatCount="1"/>
   </text>
 
-  <!-- Status indicators at bottom -->
-  <g transform="translate(240, 220)">
-    <!-- Branch -->
-    <circle cx="0" cy="0" r="4" fill="#3fb950"/>
-    <text x="12" y="4" font-family="'Courier New', monospace" font-size="11" fill="#7d8590">main</text>
+  <!-- Subtitle — fade in after name -->
+  <text x="450" y="132" text-anchor="middle"
+        font-family="'Courier New', monospace" font-size="13" fill="#7d8590" letter-spacing="2" opacity="0">
+    CS STUDENT  ·  SOFTWARE DEVELOPER  ·  BUILDER
+    <animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.5s" fill="freeze" repeatCount="1"/>
+  </text>
 
-    <!-- Building -->
-    <circle cx="95" cy="0" r="4" fill="#3fb950"/>
-    <text x="107" y="4" font-family="'Courier New', monospace" font-size="11" fill="#7d8590">building</text>
+  <!-- Amber divider line — fade in -->
+  <rect x="310" y="146" width="280" height="1" fill="url(#amberGlow)" opacity="0">
+    <animate attributeName="opacity" values="0;0.8" dur="0.5s" begin="0.8s" fill="freeze" repeatCount="1"/>
+  </rect>
 
-    <!-- Deploying -->
-    <circle cx="210" cy="0" r="4" fill="#e8a838"/>
-    <text x="222" y="4" font-family="'Courier New', monospace" font-size="11" fill="#7d8590">deploying</text>
+  <!-- Tagline with blinking cursor — fade in -->
+  <text x="450" y="176" text-anchor="middle"
+        font-family="'Courier New', monospace" font-size="15" font-weight="600" fill="#e8a838" letter-spacing="1" opacity="0">
+    &gt; learn. build. debug. deploy. repeat. _
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1s" fill="freeze" repeatCount="1"/>
+  </text>
 
-    <!-- Learning -->
-    <circle cx="330" cy="0" r="4" fill="#58a6ff"/>
-    <text x="342" y="4" font-family="'Courier New', monospace" font-size="11" fill="#7d8590">learning</text>
-  </g>
+  <!-- Cursor blink overlay on the trailing _ -->
+  <rect x="740" y="163" width="10" height="16" fill="#e8a838" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;0" dur="1.1s" begin="1.6s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.45;0.5;0.95"/>
+  </rect>
+
+  <!-- Status dots — pulsing -->
+  <!-- main (green) -->
+  <circle cx="240" cy="220" r="4" fill="#3fb950">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="252" y="224" font-family="'Courier New', monospace" font-size="11" fill="#7d8590" opacity="0">
+    main
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze" repeatCount="1"/>
+  </text>
+
+  <!-- building (green) -->
+  <circle cx="335" cy="220" r="4" fill="#3fb950">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" begin="1.4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="347" y="224" font-family="'Courier New', monospace" font-size="11" fill="#7d8590" opacity="0">
+    building
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.4s" fill="freeze" repeatCount="1"/>
+  </text>
+
+  <!-- deploying (amber) -->
+  <circle cx="450" cy="220" r="4" fill="#e8a838">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  <text x="462" y="224" font-family="'Courier New', monospace" font-size="11" fill="#7d8590" opacity="0">
+    deploying
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.6s" fill="freeze" repeatCount="1"/>
+  </text>
+
+  <!-- learning (blue) -->
+  <circle cx="565" cy="220" r="4" fill="#58a6ff">
+    <animate attributeName="opacity" values="1;0.4;1" dur="3s" begin="0.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="577" y="224" font-family="'Courier New', monospace" font-size="11" fill="#7d8590" opacity="0">
+    learning
+    <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.8s" fill="freeze" repeatCount="1"/>
+  </text>
 
   <!-- Bottom accent line -->
   <rect x="0" y="258" width="900" height="2" fill="url(#amberGlow)" opacity="0.4"/>
