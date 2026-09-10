@@ -121,7 +121,7 @@ CI/CD configuration
 <tr>
 <td width="50%" valign="top">
 
-#### 🍎 [NutriSense](https://github.com/m-Affan55/NutriSense)
+#### [NutriSense](https://github.com/m-Affan55/NutriSense)
 
 *Making nutrition tracking less manual.*
 
@@ -137,7 +137,7 @@ AI-powered meal tracking app that combines barcode scanning with intelligent foo
 </td>
 <td width="50%" valign="top">
 
-#### ⚡ [Post-Manager](https://github.com/m-Affan55/Post-Manager)
+#### [Post-Manager](https://github.com/m-Affan55/Post-Manager)
 
 *Building and optimizing a production-style REST backend.*
 
@@ -155,7 +155,7 @@ Complete social-style backend with authentication, CRUD operations, and real per
 <tr>
 <td width="50%" valign="top">
 
-#### 🍿 [MovieRecommendationSystem](https://github.com/m-Affan55/MovieRecommendationSystem)
+#### [MovieRecommendationSystem](https://github.com/m-Affan55/MovieRecommendationSystem)
 
 *Recommendations based on what you actually like.*
 
@@ -171,7 +171,7 @@ A recommendation engine using graph databases to find meaningful connections bet
 </td>
 <td width="50%" valign="top">
 
-#### 📢 [NeoNotice](https://github.com/Muhammad-Umair-Tech/NeoNotice)
+#### [NeoNotice](https://github.com/Muhammad-Umair-Tech/NeoNotice)
 
 *Department notices pushed to physical displays — automatically.*
 
