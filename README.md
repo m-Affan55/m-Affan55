@@ -396,7 +396,7 @@ I don't just build when everything works. I debug when it doesn't.
 
 <br/><br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=m-Affan55&theme=github-dark-blue&background=0d1117&ring=e8a838&fire=e8a838&currStreakLabel=e8a838&sideLabels=e6edf3&sideNums=e6edf3&dates=7d8590&border=30363d" alt="GitHub Streak" height="170"/>
+<img src="https://streak-stats.demolab.com/?user=m-Affan55&theme=github-dark-blue&background=0d1117&ring=e8a838&fire=e8a838&currStreakLabel=e8a838&sideLabels=e6edf3&sideNums=e6edf3&dates=7d8590&border=30363d" alt="GitHub Streak" height="170"/>
 
 </div>
 
