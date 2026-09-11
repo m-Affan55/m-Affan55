@@ -315,7 +315,7 @@ Full-stack notice management system built with React + Django. Notices posted th
 ### `> git log --oneline --graph`
 
 <div align="center">
-<img src="assets/journey.svg" alt="Engineering journey timeline from Foundations through Data/ML, Web/APIs, Mobile, Systems, to AI Applications" width="100%"/>
+<img src="assets/journey.svg" alt="Engineering journey timeline from Foundations through Data/ML, Web/APIs, Mobile, to Systems &amp; DevOps" width="100%"/>
 </div>
 
 <img src="assets/divider.svg" alt="" width="100%"/>
