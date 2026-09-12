@@ -388,6 +388,35 @@ I don't just build when everything works. I debug when it doesn't.
 
 ### `> neofetch --stats`
 
+<!-- DYNAMIC-STATS:START -->
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="25%">
+<h3>&#128197; Saturday</h3>
+<sub>September 13, 2026</sub>
+</td>
+<td align="center" width="25%">
+<h3>&#128293; 0 days</h3>
+<sub>Current Streak</sub>
+</td>
+<td align="center" width="25%">
+<h3>&#128202; 0</h3>
+<sub>Contributions this year</sub>
+</td>
+<td align="center" width="25%">
+<h3>&#128187; 0</h3>
+<sub>Commits this year</sub>
+</td>
+</tr>
+</table>
+
+<sup>&#9889; Auto-refreshed every 24h via GitHub Actions &nbsp;&#183;&nbsp; Live data from GitHub API</sup>
+
+</div>
+<!-- DYNAMIC-STATS:END -->
+
 <div align="center">
 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=m-Affan55&theme=github_dark" alt="Affan's GitHub Stats" height="170"/>
