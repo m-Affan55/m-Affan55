@@ -396,26 +396,7 @@ I don't just build when everything works. I debug when it doesn't.
 
 <br/><br/>
 
-<!-- STREAK-STATS:START -->
-<table style="border-collapse:collapse;background:#0d1117;border:1px solid #30363d;border-radius:6px">
-<tr>
-<td align="center" width="33%" style="padding:20px 30px;border-right:1px solid #30363d">
-<h2 style="color:#e6edf3;margin:0">428</h2>
-<p style="color:#7d8590;margin:4px 0 0">Total Contributions</p>
-<sub style="color:#7d8590">May 31, 2025 - Present</sub>
-</td>
-<td align="center" width="33%" style="padding:20px 30px;border-right:1px solid #30363d">
-<h2 style="color:#e8a838;margin:0">&#128293; 2</h2>
-<p style="color:#e8a838;margin:4px 0 0">Current Streak</p>
-<sub style="color:#7d8590">Sep 11 - Sep 12</sub>
-</td>
-<td align="center" width="33%" style="padding:20px 30px">
-<h2 style="color:#e6edf3;margin:0">21</h2>
-<p style="color:#7d8590;margin:4px 0 0">Longest Streak</p>
-<sub style="color:#7d8590">Aug 14 - Sep 03</sub>
-</td>
-</tr>
-</table>
+
 <sub>&#9889; Auto-refreshed every 24h via GitHub Actions &nbsp;&#183;&nbsp; Live data from GitHub API</sub>
 <!-- STREAK-STATS:END -->
 
