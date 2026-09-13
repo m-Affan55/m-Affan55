@@ -197,7 +197,7 @@ Full-stack notice management system built with React + Django. Notices posted th
 | [Food_Management](https://github.com/m-Affan55/Food_Management) | `C#` `Windows Forms` `MySQL` | Desktop food management system |
 | [BankManagementSystem](https://github.com/m-Affan55/BankManagementSystem) | `C++` | Console-based banking application with OOP |
 | [HostelManagementSystem](https://github.com/m-Affan55/HostelManagementSystem) | `C++` | Hostel management with file handling |
-| [LARA](https://github.com/Muhammad-Umair-Tech/lara) | `Python` `Django` `ESP32` | SIEM app — detects transaction overflow, account takeover & suspicious activity for banking systems |
+| [LARA](https://github.com/Muhammad-Umair-Tech/lara) | `Python` `Django` | SIEM app — detects transaction overflow, account takeover & suspicious activity for banking systems |
 
 </details>
 
