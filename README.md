@@ -394,11 +394,11 @@ I don't just build when everything works. I debug when it doesn't.
 <table>
 <tr>
 <td align="center" width="25%">
-<h3>&#128197; Monday</h3>
-<sub>September 28, 2026</sub>
+<h3>&#128197; Tuesday</h3>
+<sub>September 29, 2026</sub>
 </td>
 <td align="center" width="25%">
-<h3>&#128293; 2 days</h3>
+<h3>&#128293; 0 days</h3>
 <sub>Current Streak</sub>
 </td>
 <td align="center" width="25%">
