@@ -394,8 +394,8 @@ I don't just build when everything works. I debug when it doesn't.
 <table>
 <tr>
 <td align="center" width="25%">
-<h3>&#128197; Saturday</h3>
-<sub>October 03, 2026</sub>
+<h3>&#128197; Sunday</h3>
+<sub>October 04, 2026</sub>
 </td>
 <td align="center" width="25%">
 <h3>&#128293; 0 days</h3>
